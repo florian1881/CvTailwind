@@ -6,6 +6,7 @@
 
 install node 
 npm install
+npm install live-server --no-save
 
 to rebuild css when u dis some change (adding a new classe)
 =====> npm run build
