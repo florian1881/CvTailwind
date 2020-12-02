@@ -1,0 +1,163 @@
+======================================================================================================================================================
+======================================================================================================================================================
+====================================================================== Short way =====================================================================
+======================================================================================================================================================
+======================================================================================================================================================
+
+install node 
+npm install
+
+to rebuild css when u dis some change (adding a new classe)
+=====> npm run build
+Start the server for automatic reload
+=====> live-server build
+
+======================================================================================================================================================
+======================================================================================================================================================
+==================================================== Classic way / Initialization of a new project ===================================================
+======================================================================================================================================================
+======================================================================================================================================================
+
+install node 
+install tailwindcss
+install postcss-cli
+install autoprefixer
+install live-server (optionnal)
+
+npm init -y
+=============> creating package.json already filled
+
+npx tailwind init 
+=============> creating tailwind.config.js already filled
+
+create file postscc.config.js
+
+===========INSIDE postcss.config.js=============
+
+// postcss.config.js
+module.exports = {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
+  }
+================================================
+
+Create a folder named css
+
+inside the Css folder add a new file named styles.css
+
+Fill the Css with the following: 
+================================================
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Modify package.json and add in the script section: 
+================================================
+"build": "postcss css/style.css -o build/style.css"
+
+CMD 
+===
+npm run build 
+==============> create a new folder named build and a new file inside name styles.css that contain
+all the css classes from tailwind. 
+
+Into the build folder add a new file index.html
+
+Set the head and add the link to the styles.css
+
+On vsCode install Tailwind CSS IntelliSense plugin for autocompletion.
+
+CMD 
+===
+live-server build
+==============> create a server that show the result of your work into your navigator. the page 
+will reload automaticaly showing changes in real time. 
+
+________________________________________________________________________________________________________________________________
+|If ERROR : 
+|==========
+|live-server : Impossible de charger le fichier C:\Users\flori\AppData\Roaming\npm\live-server.ps1, car l’exécution de scripts 
+|est désactivée sur ce système. Pour plus d’informations, consultez about_Execution_Policies à l’adresse 
+|
+|in shell
+|========
+|Set-ExecutionPolicy RemoteSigned
+________________________________________________________________________________________________________________________________
+
+Add component for reuse and mass changements.
+-------------------------------------------------------------------------------------------------
+
+into the folder css and into the file styles.css 
+Between @tailwind components and @tailwind utilities !!!!!VERY IMPORTANT!!!!!
+
+Avoid using existing tailwinds classes names.
+________________________________________________________________________________________________________________________________
+.<classeName>{
+  @apply <your tailwind style classes for the particular component>
+}
+________________________________________________________________________________________________________________________________
+
+you can for example add more tailwinds classes on change the existing when hover by adding the following
+
+ ________________________________________________________________________________________________________________________________
+ hover:<classeName>{
+   @apply <more tailwind css classes or change to apply to the classe on hover>
+ }
+ ________________________________________________________________________________________________________________________________
+
+You have to build the css files again if you want to use the new classes you just set. 
+
+CMD:
+===
+npm run build
+
+Actual added classes: 
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-li {
+        @apply 
+        mx-5 
+        my-2 
+        align-middle 
+
+        text-white 
+        uppercase 
+        font-bold
+
+        hover:text-gray-400;
+
+    }
+
+    .btn-blue {
+        @apply 
+        bg-blue-500 
+        text-white 
+        uppercase
+
+        py-2 px-6 
+        my-2 
+        mx-auto
+
+        rounded-md 
+        
+        block 
+        
+        md:flex 
+        
+        hover:bg-blue-700;
+    }
+}
+
+Production optimisation :  
+
+https://tailwindcss.com/docs/optimizing-for-production 
+https://www.youtube.com/watch?v=bhoDwo24K5Q
+
