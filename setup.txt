@@ -6,7 +6,19 @@
 
 install node 
 npm install
-npm install live-server --no-save
+npm install live-server --no-save -g
+
+________________________________________________________________________________________________________________________________
+|If ERROR : 
+|==========
+|live-server : Impossible de charger le fichier C:\Users\flori\AppData\Roaming\npm\live-server.ps1, car l’exécution de scripts 
+|est désactivée sur ce système. Pour plus d’informations, consultez about_Execution_Policies à l’adresse 
+|
+|in shell
+|========
+|Set-ExecutionPolicy RemoteSigned
+________________________________________________________________________________________________________________________________
+
 
 to rebuild css when u dis some change (adding a new classe)
 =====> npm run build
