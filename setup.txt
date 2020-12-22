@@ -170,7 +170,20 @@ Actual added classes:
 }
 
 Production optimisation :  
+=========================
 
-https://tailwindcss.com/docs/optimizing-for-production 
-https://www.youtube.com/watch?v=bhoDwo24K5Q
+Purge Css
+- tailwindconfig.js : 
+Uncomment //enabled: true
 
+- npm run set_prod
+- npm run build
+
+Back to dev:  
+============
+
+- tailwindconfig.js : 
+Comment enabled: true
+
+- npm run set_prod
+- npm run build
