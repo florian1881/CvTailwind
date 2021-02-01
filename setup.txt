@@ -200,9 +200,5 @@ Back to dev:
 - tailwindconfig.js : 
 Comment enabled: true
 
-<<<<<<< HEAD
 - npm run set_dev
-=======
-- npm run set_prod
->>>>>>> 49290d4bb93e5274a7b0314fe6128078bf18b5f3
 - npm run build
