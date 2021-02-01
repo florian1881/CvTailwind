@@ -12,7 +12,7 @@
 
     .btn-blue {
         @apply 
-        justify-center block w-32 h-10 px-6 py-2 mx-auto my-2 text-center text-white uppercase bg-blue-500 rounded-md md:flex md:mx-7 lg:mx-14 hover:bg-blue-700;
+        justify-center block w-32 h-10 px-6 py-2 mx-auto my-2 text-center text-white uppercase bg-blue-500 rounded-md md:flex md:mx-7 lg:mx-14 hover:bg-blue-700 md:text-4xl md:w-48 md:h-14 md:my-auto;
     }
     .devbord{
         @apply

@@ -635,8 +635,14 @@ video {
 @media (min-width: 768px) {
   .btn-blue {
     display: flex;
+    height: 3.5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
     margin-left: 1.75rem;
     margin-right: 1.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 12rem;
   }
 }
 
