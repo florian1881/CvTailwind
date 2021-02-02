@@ -50,6 +50,7 @@ install node
 install tailwindcss
 install postcss-cli
 install autoprefixer
+npm install css-minify -g
 install live-server (optionnal)
 
 npm init -y
@@ -193,6 +194,10 @@ Uncomment //enabled: true
 
 - npm run set_prod
 - npm run build
+
+Compress CSS: 
+
+css-minify -f filename
 
 Back to dev:  
 ============
