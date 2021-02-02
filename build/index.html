@@ -11,19 +11,21 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <div id="page 1" class="bg-gray-600 ">
+    <div id="page 1">
+        <div class="fixed w-screen z-50 top-0">
+            <nav class="flex md:h-14 bg-gray-600">
+                <h1 class="flex my-auto ml-5  text-white uppercase"> CV Florian PEREZ</h1>
+                <ul class="mx-auto my-auto text-center md:flex">
+                    <li class="nav-li"><a href="#presentation">présentation</a></li>
+                    <li class="nav-li"><a href="#projets">projets</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <nav class="flex md:h-14 md:bg-gray-700">
-            <h1 class="flex my-auto ml-5 text-2xl text-white uppercase"> CV Florian PEREZ</h1>
-            <ul class="mx-auto my-auto text-center md:flex">
-                <li class="nav-li"><a href="#presentation">présentation</a></li>
-                <li class="nav-li"><a href="#projets">projets</a></li>
-            </ul>
-        </nav>
 
-        <article class="p-5 bg-gray-100 md:flex h-screen ">
+        <article class="p-5 mt-16 bg-gray-100 md:flex md:h-screen">
 
             <div class="mx-auto">
                 <div class="flex mb-8 lg:my-7 ">
@@ -37,85 +39,92 @@
 
                 <article id="presentation"
                     class="text-lg md:text-3xl text-justify mt-7 md:mt-40 md:max-w-7xl md:mx-auto">
-                    <p class="mt-10">
+                    <p class="mt-6">
                         Ancien <em>journaliste</em>, je me suis reconverti en 2018 vers le <strong>développement
                             web</strong>.
                     </p>
-                    <p class="mt-10">
+                    <p class="mt-6">
                         Passionné par le <strong>développement</strong>, notamment <strong>Javascript</strong>
                         et les frameworks qui l'entoure, je suis actuellement en charge de la création de
                         <strong>scripts d'automatisations</strong> en <strong> Groovy</strong> (Java) pour les logiciels
                         <strong>Jira et Confluence</strong> de l'éditeur <strong>Atlassian</strong>.
                     </p>
-                    <p class="mt-10">
+                    <p class="mt-6">
                         J'apprécie particulièrement créer de la <strong>documentation</strong>.
                     </p>
-                    <p class="mt-10">
+                    <p class="mt-6">
                         Je suis très à l'aise avec les <strong>méthodes agiles</strong> SCRUM et KANBAN ainsi qu'avec le
                         concept des logiciels de gestion de projets et de documentation.
                         Je suis aussi<strong> certifié administrateur projet Jira</strong>.
                     </p>
                 </article>
-
             </div>
+            <a href="#projets">
+                <img class="invisible md:visible fixed bottom-10 right-10 w-14 bg-gray-100 z-20" src="./img/scroll_down.png"
+                    alt="Aller à la page suivante">
+            </a>
+    </div>
 
-        </article>
-        <div id="projets"></div>
-        <div class="text-center">
-            <h2 class="p-3 m-8 bg-blue-400 rounded text-center" data-aos="fade-up" data-aos-duration="1000">Projets</h2>
+    </article>
+    <div id="projets" class="bg-gray-700 pt-2 text-center">
+        <h2 class="mt-14 p-3 m-8 bg-blue-400 rounded text-center text-white" data-aos="fade-right" data-aos-duration="1000">
+            Projets</h2>
 
-            <div class=" mx-8 md:grid md:grid-cols-6 md:gap-10 grid grid-cols-2 gap-10">
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/bin_game.png" alt="Binary Game Screen Shot">
-                    <h3 class="text-2xl py-6">Binary game</h3>
+        <div class=" mx-8 md:grid md:grid-cols-6 md:gap-10 grid grid-cols-2 gap-10">
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/bin_game.png" alt="Binary Game Screen Shot">
+                <h3 class=" py-6">Binary game</h3>
 
-                </article>
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/my_count.png" alt="My Count Screen Shot">
-                    <h3 class="text-2xl py-6">My Counter</h3>
-                </article>
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/hex_gen.png" alt="Générateur de couleurs héxadécimales Screen Shot">
-                    <h3 class="text-2xl py-6">Générateur de couleurs héxadécimales</h3>
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/my_count.png" alt="My Count Screen Shot">
+                <h3 class=" py-6">My Counter</h3>
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/hex_gen.png" alt="Générateur de couleurs héxadécimales Screen Shot">
+                <h3 class=" py-6">Générateur de couleurs héxadécimales</h3>
 
-                </article>
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/boisson_perez.png" alt="Boissons Perez Screen Shot">
-                    <h3 class="text-2xl py-6">Le site Boissons Perez (sur wordpress)</h3>
-                </article>
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/c_g_p.png" alt="Christmas gift picker sur Github">
-                    <h3 class="text-2xl py-6">Christmas gift picker sur Github</h3>
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/boisson_perez.png" alt="Boissons Perez Screen Shot">
+                <h3 class=" py-6">Le site Boissons Perez (sur wordpress)</h3>
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/c_g_p.png" alt="Christmas gift picker sur Github">
+                <h3 class=" py-6">Christmas gift picker sur Github</h3>
 
-                </article>
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/list_app.png" alt="Application liste Screen Shot">
-                    <h3 class="text-2xl py-6">Application de liste</h3>
-                </article>
-            </div>
-            <h2 class="p-3 m-8 bg-blue-400 rounded text-center" data-aos="fade-up" data-aos-duration="1000">Veille et documentation</h2>
-                <div class="mx-8 md:grid md:grid-cols-6 md:gap-10 grid grid-cols-2 gap-10 pb-24">
-                    
-                    <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="rounded" src="./img/conf_dev.png" alt="Confluence Developpement Screen Shot">
-                        <h3 class="text-2xl py-6">Confluence Developpement</h3>
-    
-                    </article>
-                    <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="rounded" src="./img/conf_mat.png" alt="Confluence Matrics Screen Shot">
-                        <h3 class="text-2xl py-6">Confluence Matrics</h3>
-                    </article>
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/list_app.png" alt="Application liste Screen Shot">
+                <h3 class=" py-6">Application de liste</h3>
+            </article>
+        </div>
 
-                </article>
-                <article class="bg-gray-100 rounded" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="rounded" src="./img/dev_trello.png" alt="Veille développement sur trello Screen Shot">
-                    <h3 class="text-2xl py-6">Veille développement sur trello</h3>
-                </article>
+        <h2 class="p-3 m-8 bg-blue-400 rounded text-center text-white" data-aos="fade-right" data-aos-duration="1000">
+            Veille et
+            documentation</h2>
+        <div class="mx-8 md:grid md:grid-cols-6 md:gap-10 grid grid-cols-2 gap-10 pb-24">
 
-                </div>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/conf_dev.png" alt="Confluence Developpement Screen Shot">
+                <h3 class=" py-6">Confluence Developpement</h3>
+
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/conf_mat.png" alt="Confluence Matrics Screen Shot">
+                <h3 class=" py-6">Confluence Matrics</h3>
+            </article>
+
+            </article>
+            <article class="bg-gray-100 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img class="rounded" src="./img/dev_trello.png" alt="Veille développement sur trello Screen Shot">
+                <h3 class=" py-6">Veille développement sur trello</h3>
+            </article>
 
         </div>
-    </div>
+
+
+
 </body>
 <!-- AOS script needs to be declare here -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
