@@ -2,33 +2,43 @@
 <html lang="fr">
 
 <head>
+
+     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This website is the portfolio of Florian PEREZ, developper, integrator and Atlassian specialist">
     <meta name="google-site-verification" content="vJYUlRTHnODlZXe3N2sIKXzmJ8V51A5rJB9A5L4L_xM" />    <!-- AOS is use for smooth transition https://michalsnik.github.io/aos/ -->
     <!-- tuto install = https://karac.ch/blog/animations-scroll-aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    <link rel="stylesheet" href="./styles.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
     <title>CV numérique de Florian Perez : developpeur, integrateur & spécialiste Atlassian </title>
 </head>
 
-<body>
+<body class="text-white incons">
+        <!-- background video fixed Z index 10 from https://coverr.co/-->
+        <video autoplay loop muted class="fixed object-cover h-full md:w-screen">
+            <source src="./video/Coding Developer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    
+    <!-- navigation -->
     <div id="page 1"> 
-        <div class="fixed w-screen z-50 top-0">
-            <nav class="flex md:h-14 bg-gray-600">
-                <h1 class="font-bold flex my-auto ml-5 text-white uppercase text-bold">Florian PEREZ |<br> Développeur, integrateur & spécialiste Atlassian</h1>
+        <div class="fixed top-0 z-50 min-w-full">
+            <nav class="flex bg-black md:h-20">
+                <h1 class="flex my-auto ml-5 text-2xl font-bold text-white uppercase text-bold">Florian PEREZ |<br> Développeur, integrateur & spécialiste Atlassian</h1>
                 <ul class="mx-auto my-auto text-center md:flex">
-                    <li class="nav-li"><a href="#presentation">présentation</a></li>
-                    <li class="nav-li"><a href="#projets">projets</a></li>
+                    <li class="text-2xl nav-li"><a href="#presentation">présentation</a></li>
+                    <li class="text-2xl nav-li"><a href="#projets">projets</a></li>
                 </ul>
             </nav>
         </div>
 
+        <article id="presentation" class="p-5 md:flex">
 
-        <article id="presentation" class="p-5  md:flex ">
-
-            <div class="mx-auto mt-32">
+            <div class="z-40 mx-auto mt-32">
                 <div class="flex mb-8 lg:my-7 ">
                     <h2 class="self-center mr-5 text-5xl lg:mx-20 md:text-6xl md:mt-20">Florian PEREZ</h2>
                     <div class="content-center md:flex md:mt-20 ">
@@ -38,7 +48,7 @@
                     </div>
                 </div>
 
-                <article class="text-lg md:text-3xl text-justify mt-7 md:mt-40 md:max-w-7xl md:mx-auto">
+                <article class="text-lg text-justify md:text-3xl mt-7 md:mt-40 md:max-w-7xl md:mx-auto">
                     <p class="mt-6">
                         Ancien <em>journaliste</em>, je me suis reconverti en 2018 vers le <strong>développement
                             web</strong>.
@@ -59,89 +69,96 @@
                     </p>
                 </article>
             </div>
+        </article>
     </div>
 
-    </article>
+   
 
-    <div id="projets" class="pt-24 text-center">
-        <h2  class="p-3 m-8 bg-blue-400 rounded text-center text-white" data-aos="fade-right"
+    <div id="projets" class="z-40 pt-24 text-center ">
+        <h2  class="z-40 p-3 m-8 text-5xl text-center text-white uppercase bg-black rounded" data-aos="fade-right"
             data-aos-duration="1000">
             Projets</h2>
 
-        <div class=" mx-8 md:grid md:grid-cols-6 md:gap-10 grid grid-cols-2 gap-10">
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="grid grid-cols-2 gap-10 mx-8 md:grid md:grid-cols-6 md:gap-10">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://b1nary.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/bin_game.png" alt="Binary Game Screen Shot">
-                    <h3 class=" py-6">Binary game</h3>
+                    <h3 class="py-6 ">Binary game</h3>
                 </a>
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://mycount.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/my_count.png" alt="My Count Screen Shot">
-                    <h3 class=" py-6">My Counter</h3>
+                    <h3 class="py-6 ">My Counter</h3>
                 </a>
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://hexgen.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/hex_gen.png"
                         alt="Générateur de couleurs héxadécimales Screen Shot">
-                    <h3 class=" py-6">Générateur de couleurs héxadécimales</h3>
+                    <h3 class="py-6 ">Générateur de couleurs héxadécimales</h3>
                 </a>
 
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://boissonsperez.alwaysdata.net/" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/boisson_perez.png" alt="Boissons Perez Screen Shot">
-                    <h3 class=" py-6">Le site Boissons Perez (sur wordpress)</h3>
+                    <h3 class="py-6 ">Le site Boissons Perez (sur wordpress) v1</h3>
                 </a>
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+                <a href="https://boissonsperez.fr/" target="_blank" rel="noopener noreferrer">
+                    <img class="rounded" src="./img/BoissonsPerez – Brave.png" alt="Boissons Perez Screen Shot">
+                    <h3 class="py-6 ">Le site Boissons Perez (wordpress/tailwind) v2</h3>
+                </a>
+            </article>
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://github.com/florian1881/christmasGiftPicker" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/c_g_p.png" alt="Christmas gift picker sur Github">
-                    <h3 class=" py-6">Christmas gift picker sur Github</h3>
+                    <h3 class="py-6 ">Christmas gift picker sur Github</h3>
                 </a>
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://my-storage.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/list_app.png" alt="Application liste Screen Shot">
-                    <h3 class=" py-6">Application de liste</h3>
+                    <h3 class="py-6 ">Application de liste</h3>
                 </a>
                 
             </article>
 
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://mathmatch.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/match.png" alt="Mathmatch Screen Shot">
-                    <h3 class=" py-6">Match aleatoire de valeur</h3>
+                    <h3 class="py-6 ">Match aleatoire de valeur</h3>
                 </a>
                 
             </article>
         </div>
 
-        <h2 class="p-3 m-8 bg-blue-400 rounded text-center text-white" data-aos="fade-right"
+        <h2 class="p-3 m-8 text-5xl text-center text-white uppercase bg-black rounded" data-aos="fade-right"
             data-aos-duration="1000">
             Veille et
             documentation</h2>
-        <div class="mx-8 md:grid md:grid-cols-6 md:gap-10 grid grid-cols-2 gap-10 pb-24">
+        <div class="grid grid-cols-2 gap-10 pb-24 mx-8 md:grid md:grid-cols-6 md:gap-10">
 
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://devactivity.atlassian.net/wiki/home">
                     <img class="rounded" src="./img/conf_dev.png" alt="Confluence Developpement Screen Shot">
-                    <h3 class=" py-6">Confluence Developpement</h3>
+                    <h3 class="py-6 ">Confluence Developpement</h3>
                 </a>
 
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <img class="rounded " src="./img/conf_mat.png" alt="Confluence Matrics Screen Shot">
-                <h3 class=" py-6">Confluence Matrics</h3>
+                <h3 class="py-6 ">Confluence Matrics</h3>
             </article>
 
             </article>
-            <article class="rounded border-gray-200 border-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://trello.com/b/gNGZaqTY/dev" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/dev_trello.png"
                         alt="Veille développement sur trello Screen Shot">
-                    <h3 class=" py-6 mt-6">Veille développement sur trello</h3>
+                    <h3 class="py-6 mt-6 ">Veille développement sur trello</h3>
                 </a>
             </article>
 
