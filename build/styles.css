@@ -614,6 +614,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .content-center {
   align-content: center;
 }
@@ -890,6 +894,10 @@ video {
 
   .md\:max-w-7xl {
     max-width: 80rem;
+  }
+
+  .md\:visible {
+    visibility: visible;
   }
 
   .md\:w-screen {
