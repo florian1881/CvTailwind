@@ -11,7 +11,7 @@
     <!-- tuto install = https://karac.ch/blog/animations-scroll-aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.min.css">
     <link rel="stylesheet" href="./font.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 <body class="text-white incons">
         <!-- background video fixed Z index 10 from https://coverr.co/-->
         <video autoplay loop muted class="fixed object-cover h-full md:w-screen">
-            <source src="./video/Coding Developer.mp4" type="video/mp4" />
+            <source src="./video/coding.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     
@@ -37,19 +37,19 @@
             </nav>
         </div>
 
-        <article id="presentation" class="flex p-5 pt-40">
+        <article id="presentation" class="flex p-5 pt-32">
 
             <div class="z-40 mx-auto">
-                <div class="flex mb-8 lg:my-7 ">
-                    <h2 class="self-center ml-5 mr-5 text-5xl lg:mx-20 md:text-6xl md:mt-20">Florian PEREZ</h2>
-                    <div class="content-center md:flex md:mt-20 ">
-                        <button class="mr-5 btn-blue">Github</button>
-                        <button class="mr-5 btn-blue">Linkedin</button>
-                        <button class="mr-5 btn-blue">Mail</button>
+                <div class="flex mb-8">
+                    <h2 class="self-center ml-5 mr-5 text-5xl lg:mx-20 md:text-6xl ">Florian PEREZ</h2>
+                    <div class="content-center md:flex ">
+                        <a href="https://github.com/florian1881" target="_blank" rel="noopener noreferrer"><button class="mr-5 btn-blue">Github</button></a>
+                        <a href="https://www.linkedin.com/in/florianperez/" target="_blank" rel="noopener noreferrer"><button class="mr-5 btn-blue">Linkedin</button></a>
+                        <a href="mailto:florianper@gmail.com"><button class="mr-5 btn-blue">Mail</button></a>
                     </div>
                 </div>
 
-                <article class="text-lg text-justify md:text-3xl mt-7 md:mt-40 md:max-w-7xl md:mx-auto">
+                <article class="text-lg text-justify bg-blue-200 shadow-2xl bg-opacity-10 rounded-2xl md:text-3xl p-7 md:mt-40 md:max-w-7xl md:mx-auto">
                     <p class="mx-8 mt-6">
                         Ancien <em>journaliste</em>, je me suis reconverti en 2018 vers le <strong>développement
                             web</strong>.
@@ -75,25 +75,25 @@
 
    
 
-    <div id="projets" class="z-40 pt-24 text-center ">
-        <h2  class="z-40 p-3 m-8 mt-20 text-5xl text-center text-white uppercase bg-black rounded" data-aos="fade-right"
+    <div id="projets" class="z-40 pt-3 text-center ">
+        <h2  class="z-40 p-3 m-8 mt-20 text-5xl text-center text-white uppercase bg-black bg-blue-200 rounded shadow-2xl bg-opacity-10 rounded-2xl" data-aos="fade-right"
             data-aos-duration="1000">
             Projets</h2>
 
         <div class="grid grid-cols-2 gap-10 mx-8 md:grid md:grid-cols-6 md:gap-10">
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://b1nary.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/bingame.jpg" alt="Binary Game Screen Shot">
                     <h3 class="py-6 ">Binary game</h3>
                 </a>
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://mycount.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/mycount.jpg" alt="My Count Screen Shot">
                     <h3 class="py-6 ">My Counter</h3>
                 </a>
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://hexgen.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/hexgen.jpg"
                         alt="Générateur de couleurs héxadécimales Screen Shot">
@@ -101,25 +101,25 @@
                 </a>
 
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://boissonsperez.alwaysdata.net/" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/boissonsv1.jpg" alt="Boissons Perez Screen Shot">
-                    <h3 class="py-6 ">Le site Boissons Perez (sur wordpress) v1</h3>
+                    <h3 class="py-6 ">Boissons Perez v1 (wordpress) </h3>
                 </a>
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://boissonsperez.fr/" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/boissonsv2.jpg" alt="Boissons Perez Screen Shot">
-                    <h3 class="py-6 ">Le site Boissons Perez (wordpress/tailwind) v2</h3>
+                    <h3 class="py-6 ">Boissons Perez v2 (wordpress / tailwind)</h3>
                 </a>
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://github.com/florian1881/christmasGiftPicker" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/christpick.jpg" alt="Christmas gift picker sur Github">
                     <h3 class="py-6 ">Christmas gift picker sur Github</h3>
                 </a>
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://my-storage.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/storage.jpg" alt="Application liste Screen Shot">
                     <h3 class="py-6 ">Application de liste</h3>
@@ -127,7 +127,7 @@
                 
             </article>
 
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://mathmatch.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/randmatch.jpg" alt="Mathmatch Screen Shot">
                     <h3 class="py-6 ">Match aleatoire de valeur</h3>
@@ -136,26 +136,26 @@
             </article>
         </div>
 
-        <h2 class="p-3 m-8 text-5xl text-center text-white uppercase bg-black rounded" data-aos="fade-right"
+        <h2 class="p-3 m-8 text-5xl text-center text-white uppercase bg-black bg-blue-200 rounded shadow-2xl bg-opacity-10 rounded-2xl" data-aos="fade-right"
             data-aos-duration="1000">
             Veille et
             documentation</h2>
         <div class="grid grid-cols-2 gap-10 pb-24 mx-8 md:grid md:grid-cols-6 md:gap-10">
 
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://devactivity.atlassian.net/wiki/home">
                     <img class="rounded" src="./img/confdev.jpg" alt="Confluence Developpement Screen Shot">
                     <h3 class="py-6 ">Confluence Developpement</h3>
                 </a>
 
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <img class="rounded " src="./img/confmat.jpg" alt="Confluence Matrics Screen Shot">
                 <h3 class="py-6 ">Confluence Matrics</h3>
             </article>
 
             </article>
-            <article class="border-2 border-gray-200 rounded" data-aos="zoom-in-up" data-aos-duration="1000">
+            <article class="p-10 bg-blue-200 border-gray-200 rounded shadow-2xl rounded-2xl bg-opacity-10 rounded-2xlborder-2" data-aos="zoom-in-up" data-aos-duration="1000">
                 <a href="https://trello.com/b/gNGZaqTY/dev" target="_blank" rel="noopener noreferrer">
                     <img class="rounded" src="./img/trello.jpg"
                         alt="Veille développement sur trello Screen Shot">
