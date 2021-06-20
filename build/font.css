@@ -1,3 +1,12 @@
 .incons{
     font-family: 'Inconsolata', monospace;
 }
+html{
+    scroll-behavior: smooth;
+    /*pointer à changer par un cursor*/
+    cursor:url(./img/cursor/normal-select.cur),default;
+    caret-color: transparent !important;
+}
+a, button{
+    cursor:url(./img/cursor/link-select.cur),pointer;
+}
